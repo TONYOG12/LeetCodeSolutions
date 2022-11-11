@@ -8,8 +8,12 @@ def even(arr):
             return res.append(arr[0])
         return res
     
+    res = even(arr[0:n-1])
     if arr[n-1] % 2 == 0:
-        res = even(arr[0:n-1])
         res.append(arr[n-1])
         return res
-    return even(arr[0:n-1])
+        
+    return res
+
+
+
